@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+	padding: 0;
+    box-sizing: border-box;	
+}
+ 
+
+body{
+    background-image: linear-gradient(100deg, #4568dc, #b06ab3);
+	
+	 /* background-color: black; */
+	/* color: rgb(23, 231, 23); */
+	color:aliceblue;
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	font-size: 2.3rem;
+}
+
+.header2{
+	margin-top: 7rem;
+	font-size: 3rem;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form{
+	min-height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form input{
+	min-width: 50%;
+	outline: none;           /*removes the inner black border very much needed*/
+}
+
+form input,form button{
+    padding: 0.3rem;
+	font-size: 1.5rem;
+	border: none;
+	border-radius: 2.5%;
+	background: white;
+
+}
+
+form button{
+	color: #4568dc;
+	/* color: rgb(26, 241, 26); */
+	background: white;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	margin-left: 3px;
+}
+
+form button:hover{
+	color: white;
+	background: #4568dc;
+	/* background: green; */
+}
+
+.todo-container{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.todo-list{
+	min-width: 10%;
+	list-style: none;
+}
+
+.todo{
+	margin: 0.5rem;
+	background-color: white;
+    color: black;
+	font-size: 1.5rem;
+	font-family: 'Work Sans', sans-serif;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: all 0.5s ease;  /* transition in check button */
+} 
+
+
+.todo li{
+	flex: 1;
+}
+
+.checked-btn ,
+.delete-btn{
+    background: #4568dc;
+    cursor: pointer;
+	padding: 0.5rem;
+	border: none;
+	margin: 3px;
+	border-radius: 0%;
+}
+
+.checked-btn{
+	background: rgb(73,204,73);
+}
+
+.todo-item{
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check{
+	pointer-events: none;         /*now we cannot click on the classes as we have use this to remove the struggle to click on the delete, check button as on clicking the class is getting selected*/
+}
+
+
+.completed{
+	text-decoration: line-through;
+	opacity: 0.5;
+}
+
+.fall{
+	transform: translateY(8rem) rotateZ(20deg);
+    opacity : 0;
+}
+
+.text-typing {
+	padding:20px 30px;
+	font-size:35px;
+	border-radius:50px;
+  }
+  .text-typing h1 {
+	margin:0px;
+	white-space:nowrap;
+	overflow:hidden;
+	animation:typing 2s steps(22,end) forwards,
+			  blink 1s infinite;
+  }
+  @keyframes typing {
+	0% { width:0% }
+	100% { width:100% }
+  }
+  @keyframes blink {
+	0%,100% {
+	  border-right:2px solid transparent;
+	}
+	50% {
+	  border-right:2px solid #222;
+	}
+}
+
+li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #ecf0f1;
+  text-decoration: none;
+
+}
+
+header {
+  display: flex;
+    /* Puts elements next to one another, not on top */
+  justify-content: center;
+    /* This pushes the left & right items to far edges and adds space between  */
+  align-items: center;
+    /* Centers everything in the header - horizontally not vertivally */
+  padding: 30px 10%;
+}
+
+.logo {
+  cursor: pointer;
+  /* When hover, shows it can be clicked(remember you tried cross hair)*/
+}
+
+.nav_links {
+  list-style: none;
+  /* Removes bullets */
+}
+
+.nav_links li {
+  /* targets nav links and each item */
+  display: inline-block;
+  /* puts all the nav links side by side */
+  padding: 0px 20px;
+}
+
+/* LINK COLOURS ON HOVER */
+
+.nav_links li a {
+  /* Need to target the a's so that the transition colour works */
+transition: all 0.3 ease 0s;
+}
+
+.nav_links li a:hover {
+color: #0088a9;
+}
+
+
+.imgg{
+   height: 1.7em;
+   width: 1.7em;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Todolist</title>
+	<!-- some links to add font from google and font-awesome for icons -->
+	<script src="https://kit.fontawesome.com/98a3b57d2e.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">     
+	</head>
+<body>
+	
+	<header>
+        <p><img class = "imgg" src="thumbs-up_1f44d.png" alt="">
+		<nav class="containernav">
+			<ul class="nav_links">
+			  <li><a href="/">Home</a></li>
+			  <li><a href="https://github.com/theShashankGupta">Github</a></li>
+			  <li><a href="https://www.linkedin.com/in/shashank-gupta-a91035218/">Contacts</a></li>		      
+			</ul>
+		</nav>
+    </header>
+		
+	<!-- <header>
+	   <h1 id = "title">Just do it.</h1>
+	</header> -->
+
+	<div class="header2">
+        <div class="text-typing">
+            <h1 style="color: black;">JUST DO IT.</h1>
+        </div>
+   </div>
+
+
+    <form>
+       <input type="text" class = "todo-input">
+	   <button class = "todo-submit">
+        <i class="fas fa-plus-square"></i>
+	   </button>
+	<!-- <div class="select">
+	   <select name = 'todos' class = "filter-todo">
+		   <option value="all">All</option>
+		   <option value="completed">Done</option>
+		   <option value="uncompleted">To be Done</option>
+	   </select>
+	</div> -->
+	</form>
+	   <div class="todo-container">
+		   <ul class="todo-list"></ul>
+		   <!-- 
+			   (format how the js will create a todo element)
+            <div class = "todo">
+			    list is used for inserting the element
+				<li></li>
+				<button>checking</button>
+				<button>deleting</button>   
+			</div>
+		   -->
+	   </div>
+	   
+ 	<script src="app.js"></script>
+</body>
+</html>
